@@ -10,7 +10,7 @@ class CashRegister
   
   def add_item(item, price, quantity = 1)
     @price = price
-    @last_transaction = price * quantity
+    @total += price * quantity
       counter = 0 
       while counter < quantity
         @items << item
